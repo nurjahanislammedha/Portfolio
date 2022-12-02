@@ -70,7 +70,7 @@ a{
 /* profile starts from here */
 .profile-photo{
     margin: 10px auto;
-    width: 60%;
+    width: 100%;
     padding: 90px;
     float: left;
     
@@ -90,10 +90,6 @@ img{
 
 .profile{
 
-}
-.profile .p-des h2{
-    font-size: 18px;
-    float: left;
 }
 
 
