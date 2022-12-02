@@ -101,6 +101,7 @@ img{
 }
 span{
 
+<<<<<<< HEAD
 }
 .profile .p-des h2 p{
     float: left;
@@ -147,3 +148,13 @@ span{
     text-shadow: 0 0 15px #d35400;
 }
 /* profile ends here */
+=======
+
+
+/* profile ends here */
+
+
+.fa-brands{
+    font-size: 50px !important;
+}
+>>>>>>> b53e84279da653f9a8b77ab595dca06bc62bc1ae
