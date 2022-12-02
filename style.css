@@ -5,7 +5,7 @@
 }
 body{
     margin: 0;
-    background-color: darkseagreen;
+    background-color: darkolivegreen;
     color: antiquewhite;
     font-family:  'Montserrat', sans-serif;
 }
@@ -47,7 +47,7 @@ a{
    flex-direction: row;
    justify-content: flex-end;
    text-transform: uppercase;
-    
+    justify-content: space-around;
 }
 .nav-menu a{
     padding: 10px ;
@@ -67,10 +67,21 @@ a{
 }
 /*navigation end*/
 
+.profile{
+    width: 1130px;
+    max-width: 95%;
+    width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* profile starts from here */
 .profile-photo{
     margin: 10px auto;
-    width: 40%;
+    width: 420%;
+    height: auto;
     padding: 20px;
     float: left;
     
@@ -89,24 +100,37 @@ img{
 }
 /*profile imag end*/
 
-.profile{
+.profile .p-des h1{
+    text-transform: capitalize;
 
 }
 .profile .p-des h2{
+    width: 1130px;
+    max-width: 95%;
     font-size: 40px;
     float:left;
     text-align: left;
-    padding: 20px;
-    margin: 120 auto;
-}
-span{
+    padding: 0px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 40px;
 
-<<<<<<< HEAD
 }
-.profile .p-des h2 p{
-    float: left;
-    text-align: left;
+/* SOMEDAY HOOVER */
+
+span{
+    color: darkorange;
+    font-weight: bold;
 }
+.p-des p{
+    color: antiquewhite;
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+/*social section*/
+
 .social {
     display: flex;
     text-align: center;
@@ -114,8 +138,8 @@ span{
 .social a{
     position: relative;
     display: block;
-    color: #666;
-    font-size: 24px;
+    color: rgb(128, 118, 118);
+    font-size: 20px;
     height: 60px;
     width: 60px;
     background: #171515;
@@ -135,7 +159,7 @@ span{
     border-radius: 50%;
     z-index: -1;
     transform: scale(0.9);
-    transition: .5s;
+    transition: .4s;
 }
 .social a:hover::before{
     filter: blur(3px);
@@ -147,14 +171,53 @@ span{
     box-shadow: 0 0 15px #d35400;
     text-shadow: 0 0 15px #d35400;
 }
-/* profile ends here */
-=======
+/* social ends here */
 
-
-/* profile ends here */
-
-
-.fa-brands{
-    font-size: 50px !important;
+.cv{
+    position: relative;
+    padding: 20px;
+    margin: 0 auto;
+    height: 100%;
+    place-items: center;
+    
+    
 }
->>>>>>> b53e84279da653f9a8b77ab595dca06bc62bc1ae
+.cv a{
+    position: relative;
+    color: black;
+    height: 90px;
+    width: 150px;
+    /* border-radius: 50px;  */
+    border: none;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: 1.3rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.cv a:hover{
+    background: linear-gradient(45deg, rgb(202, 124, 7), rgb(180, 66, 31));
+    width: 400%;
+}
+/* need to understand */
+.cv a:hover:before{
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5;
+    
+/* >>>>>>>>>>>>>>>>>>>watch highlight button continue from button style<<<<<<<<<<<<<<<< will delete this comment */
+}
+
+/* profile ends here */
+
+/*fontawsome linker*/
+.fa-brands{
+    font-size: 20px !important;
+}
