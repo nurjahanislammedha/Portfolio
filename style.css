@@ -70,8 +70,8 @@ a{
 /* profile starts from here */
 .profile-photo{
     margin: 10px auto;
-    width: 100%;
-    padding: 90px;
+    width: 40%;
+    padding: 20px;
     float: left;
     
 }
@@ -85,13 +85,65 @@ img{
 }
 img{
     border-bottom: 10px solid darkorange;
+
 }
 /*profile imag end*/
 
 .profile{
 
 }
+.profile .p-des h2{
+    font-size: 40px;
+    float:left;
+    text-align: left;
+    padding: 20px;
+    margin: 120 auto;
+}
+span{
 
-
-
+}
+.profile .p-des h2 p{
+    float: left;
+    text-align: left;
+}
+.social {
+    display: flex;
+    text-align: center;
+}
+.social a{
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 24px;
+    height: 60px;
+    width: 60px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+}
+.social a:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: #d35400;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: .5s;
+}
+.social a:hover::before{
+    filter: blur(3px);
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #d35400;
+}
+.social a:hover{
+    color: #ffa502;
+    box-shadow: 0 0 15px #d35400;
+    text-shadow: 0 0 15px #d35400;
+}
 /* profile ends here */
